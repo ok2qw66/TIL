@@ -1,0 +1,28 @@
+def solution(n, computers):
+    answer = 0
+	# 연결여부 체크 (0 :미확인, 1:확인)
+    check = [0] *n
+    
+    def connect(node):
+		# 확인으로 미리 체크
+        check[node] = 1
+		# 다른 컴퓨터와 연결되어있는지 검사
+        for x in range(n):
+			# 아직 check가 미확인 상태이고 실제로 연결고리가 있다면
+            if check[x] == 0 and computers[node][x] :
+				# x 컴퓨터와 다른 연결된게 있는지 확인
+                connect(x)
+			# 체크확인 된 상태이거나 연결고리가 없을때는 for문 계속진행
+ 	
+	
+	# 모든 컴퓨터가 연결확인한 상태일때까지 반복
+    while 0 in check:
+		# 연결 미확인 컴퓨터에서 제일 숫자 작은 컴퓨터 인덱스 고르기
+        index = check.index(0)
+		# 해당 컴퓨터와 연결된게 있는지 확인
+        connect(index)
+		# connect 가 끝났다.. ==> 연결된 컴퓨터 다 찾아서 check 1로 만들었다
+		# 답 1증가 
+        answer += 1
+        
+    return answer
