@@ -61,3 +61,16 @@ int b1 = 5 > 4 ? 50 : 40;
 
 위 코드에서 `5 > 4`는 참이므로 b1에는 50이 저장됩니다.
 
+
+switch 문
+```java
+    switch(변수){
+        case 값1 : 
+            실행문; 
+            break;
+        case 값2 : 
+            실행문; 
+            break;  
+        default;    
+    }
+```
