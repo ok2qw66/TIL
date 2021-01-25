@@ -1,38 +1,3 @@
-# 푸는중...
-
-[https://programmers.co.kr/learn/courses/30/lessons/42860#](https://programmers.co.kr/learn/courses/30/lessons/42860#)
-
-```python
-def solution(name):
-    answer = []
-    alphabet = [chr(i) for i in range(ord('A'),ord('Z')+1)]
-    total = 0
-    continuous_zero = 0
-    
-    for char in name:
-        if char <= 'N':
-            answer.append(alphabet.index(char))
-        else:
-            answer.append(len(alphabet) - alphabet.index(char))
-    
-    total = sum(answer)
-    
-    for x in answer[1:]:
-        if not x:
-            continuous_zero += 1
-        else:
-            break
-            
-    return total + len(answer) - 1 - continuous_zero
-```
-
-
-
-### 문제 발견
-
-역행도 가능하다!!!
-
-```python
 def solution(name):
     answer = []
     alphabet = [chr(i) for i in range(ord('A'),ord('Z')+1)]
@@ -76,11 +41,8 @@ def solution(name):
         move = min(len(answer)-1, a_length[0]*2 + len(answer) - a_length[1] - 3, a_length[0] + (len(answer) - a_length[1])*2 - 3)
 
     return total + move
-```
 
-### 테스트 케이스
 
-```python
 print(solution('BBBAAAB')) #8
 print(solution('ABABAAAAABA')) #10
 print(solution('CANAAAAANAN')) #48
@@ -94,22 +56,3 @@ print(solution('AABAAAAAAABBB')) #11
 print(solution('ZZZ')) #5
 print(solution('BBBBAAAAAB')) #10
 print(solution('BBBBAAAABA')) #12
-```
-
-```python
-# 통과하는 테스트로 돌려보면 이렇게 나온다고 함
-9
-11
-49
-8
-10
-7
-0
-6
-2
-12
-5
-12
-13
-```
-
