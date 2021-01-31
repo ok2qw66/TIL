@@ -3,6 +3,7 @@
 | ------------------------------------ | --------------------- |
 | Java basic                           | Java                  |
 | Python basic                         | Python                |
-| virtualboc_vagrant_docker_kubernetes | 도커 / 쿠버 수업 복습 |
+| swea                                 | swea 문제 풀이        |
+| virtualboc_vagrant_docker_kubernetes | 도커 / 쿠버 수업 복습  |
 
 
