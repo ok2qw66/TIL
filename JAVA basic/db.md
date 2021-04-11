@@ -36,7 +36,6 @@ Database에 있는 정보 사용할 수 있도록 지원하는 언어
 
 ## DDL : CARD : Create, Alter, Rename, Drop
 
-![image-20210411214647880](db시험.assets/image-20210411214647880.png)
 
 ```mysql
 create database dbtest -- db 생성
@@ -50,7 +49,6 @@ drop database dbtest; -- db삭제
 use dbtest; -- db 사용
 ```
 
-![image-20210411215110660](db시험.assets/image-20210411215110660.png)
 
 ```mysql
 create table ssafy_member(
@@ -77,11 +75,6 @@ delete from ssafy_member
 where userid = 'test';
 ```
 
-![image-20210411220433621](db시험.assets/image-20210411220433621.png)
-
-![image-20210411220523217](db시험.assets/image-20210411220523217.png)
-
-![image-20210411220617891](db시험.assets/image-20210411220617891.png)
 
 ### between A and B => A<= X <=B
 
@@ -91,13 +84,9 @@ where userid = 'test';
 
 ### null & false = false , true | null = true    이거 두개빼고 다 null!!!!!!!!!!!
 
-![image-20210411222117743](db시험.assets/image-20210411222117743.png)
 
 ### round(123.456,2) => 3째자리에서 반올림
 
-![image-20210411222313532](db시험.assets/image-20210411222313532.png)
-
-![image-20210411222443143](db시험.assets/image-20210411222443143.png)
 
 ```mysql
 select insert('helloabc!!!', 6, 3, ' ssafy ')
@@ -105,19 +94,6 @@ from dual;
 ===> hello ssafy !!!
 ```
 
-![image-20210411222756519](db시험.assets/image-20210411222756519.png)
-
-![image-20210411222828784](db시험.assets/image-20210411222828784.png)
-
-![](db시험.assets/image-20210411222912408.png)
-
-![image-20210411223003962](db시험.assets/image-20210411223003962.png)
-
-![image-20210411223221155](db시험.assets/image-20210411223221155.png)
-
-
-
-![image-20210411223408019](db시험.assets/image-20210411223408019.png)
 
 
 
@@ -131,6 +107,3 @@ from dual;
 
 # 기본키 : not null / unique
 
-![image-20210411235549844](db시험.assets/image-20210411235549844.png)
-
-![image-20210411235641301](db시험.assets/image-20210411235641301.png)
