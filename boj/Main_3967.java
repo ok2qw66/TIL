@@ -56,8 +56,8 @@ public class Main_3967 {
 		t[4] = arr[11] + arr[8] + arr[5] + arr[1];
 		t[5] = arr[11] + arr[9] + arr[6] + arr[4];
 		
-		System.out.println(Arrays.toString(arr));
-		System.out.println(Arrays.toString(t));
+		//System.out.println(Arrays.toString(arr));
+		//System.out.println(Arrays.toString(t));
 		
 		for (int i = 1; i < 6; i++) {
 			if(t[0] != t[i])
